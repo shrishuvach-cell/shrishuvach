@@ -3,7 +3,7 @@ import tkinter as tk
 import math
 
 # Set precision for pi
-mpmath.mp.dps = 100000
+mpmath.mp.dps = 1000
 pi_val = str(mpmath.mp.pi)[2:]  # remove "3."
 
 # Define special colors for each digit 0-9
