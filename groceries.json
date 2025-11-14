@@ -1,0 +1,32 @@
+{
+  "apple": {
+    "quantity": 2,
+    "category": "produce",
+    "added_date": "2025-11-14T13:46:51.856850",
+    "expiry_date": null
+  },
+  "milk": {
+    "quantity": 2,
+    "category": "dairy",
+    "added_date": "2025-11-14T13:47:45.754659",
+    "expiry_date": null
+  },
+  "banana": {
+    "quantity": 1,
+    "category": "produce",
+    "added_date": "2025-11-14T18:53:49.507109",
+    "expiry_date": null
+  },
+  "chicken": {
+    "quantity": 2,
+    "category": "meat",
+    "added_date": "2025-11-14T18:55:15.486588",
+    "expiry_date": null
+  },
+  "egg": {
+    "quantity": 12,
+    "category": "uncategorized",
+    "added_date": "2025-11-14T18:55:22.492208",
+    "expiry_date": null
+  }
+}
