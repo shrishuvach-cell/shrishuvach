@@ -119,6 +119,7 @@ class GroceryChatbot:
         print(f"Bot: {text}")  # Always print to console
         
         # Only use TTS if voice is enabled and available
+	
         if self.voice_enabled and self.voice_available and self.tts_engine:
             try:
                 self.tts_engine.say(text)
@@ -252,7 +253,15 @@ Examples:
 """
 
 def main():
+
+    engine = pyttsx3.init()
+    engine.say("Hello, Welcome to the Grocery Tracking Bot.")
+
+
     bot = GroceryChatbot()
+
+
+    bot.voice_enabled = True  # Enable voice manually
     
     print("Grocery Tracking Chatbot")
     print("Type 'help' for commands or 'quit' to exit")
@@ -285,6 +294,7 @@ def main():
         # Process the message
         response = bot.process_message(user_input)
         bot.speak(response)
+        engine.say(response)
 
 if __name__ == "__main__":
     main()
