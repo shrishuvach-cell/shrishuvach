@@ -197,11 +197,11 @@ class GroceryChatbot:
             return "produce"
         elif any(word in item_lower for word in ["milk", "cheese", "yogurt", "butter", "cream"]):
             return "dairy"
-        elif any(word in item_lower for word in ["chicken", "beef", "pork", "fish", "turkey", "lamb"]):
+        elif any(word in item_lower for word in ["chicken", "fish",  "egg"]):
             return "meat"
         elif any(word in item_lower for word in ["bread", "rice", "pasta", "cereal", "flour", "sugar"]):
             return "pantry"
-        elif any(word in item_lower for word in ["ice cream", "frozen", "peas", "corn"]):
+        elif any(word in item_lower for word in ["ice cream", "frozen", "peas"]):
             return "frozen"
         elif any(word in item_lower for word in ["water", "juice", "soda", "coffee", "tea", "beer", "wine"]):
             return "beverages"
